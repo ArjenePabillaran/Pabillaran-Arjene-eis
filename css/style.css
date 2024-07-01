@@ -1,0 +1,13 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(221, 45, 14);
+}
+
+.box{
+    width: 900px;
+    margin-left: 300px;
+}
+
+.body{
+    background-color: brown;
+}

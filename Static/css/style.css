@@ -1,0 +1,189 @@
+ /* Custom aesthetics-focused styles */
+ body {
+    background-color: #34c6ff; 
+    font-family: 'Arial', sans-serif;
+    color: #ec242e; 
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: #f056c9;
+    color: #020202fa; 
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.messagebox {
+    background-color: #fd3bac; 
+    color: #9e22f0; 
+    border: 1px solid #fff; 
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.columns {
+    margin-top: 2rem;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-list a {
+    color: #333; 
+}
+
+.menu-list a:hover {
+    color: #2a71d8; /* Dark blue text color on hover */
+}
+
+.table {
+    background-color:white; /* White background for table */
+    margin-bottom: 2rem;
+}
+
+.table thead th {
+    background-color: #2c7ffa; 
+    color: #fff; /* White text color for header */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+.table tbody tr:hover {
+    background-color: #e6e6e6; /* Lighter gray background on hover */
+}
+
+.add-button {
+    background-color: #4414f1; 
+    color: #0c0303; 
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-button {
+    background-color: #a72890; /* Green background for add button */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 3px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.8rem;
+    left: 1000px;
+}
+
+.delete-button {
+    background-color: #2870a7; /* Green background for add button */
+    color: #fff; /* White text color */
+    border: none;
+    padding:3px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    left: 50px;
+}
+
+.add-button:hover {
+    background-color: #25d4f3; 
+}
+
+.update-button:hover {
+    background-color: #218838; 
+
+}
+
+.delete-button:hover {
+    background-color: #218838; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .column.is-12 {
+        width: 100%;
+    }
+
+    .column.is-2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .column.is-10 {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu-list li a {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-body .title {
+        font-size: 1.5rem;
+    }
+
+    .hero-body .subtitle {
+        font-size: 1rem;
+    }
+
+    .add-button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .table thead th {
+        font-size: 0.8rem;
+    }
+
+    .table tbody td {
+        font-size: 0.8rem;
+    }
+
+    .delete-button, .update-button {
+        font-size: xx-small;
+        
+    }
+
+    .menu-list li a {
+        font-size: 0.8rem;
+    }
+}
